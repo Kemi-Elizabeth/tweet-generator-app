@@ -27,7 +27,7 @@ The **Tweet Generator App** is a web application built with **Flask**, **Langcha
 
 ### Prerequisites
 
-- **Python 3.12+** 
+- **Python 3.12** 
 - **Git** for version control
 - **Pip** for package management
 
