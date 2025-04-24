@@ -13,7 +13,7 @@ The **Tweet Generator App** is a web application built with **Flask**, **Langcha
 ## Tech Stack
 
 - **Frontend**: 
-  - **HTML** and **CSS** for the user interface (UI).
+  - **HTML** and **CSS** for the user interface.
   
 - **Backend**: 
   - **Flask** for building the web application.
@@ -23,11 +23,11 @@ The **Tweet Generator App** is a web application built with **Flask**, **Langcha
 - **Others**:
   - **Python** for the overall development and execution.
 
-## Setup and Installation
+## Setup and installation
 
 ### Prerequisites
 
-- **Python 3.12+** (If you're using a virtual environment, it's important to have Python installed)
+- **Python 3.12+** 
 - **Git** for version control
 - **Pip** for package management
 
@@ -44,13 +44,17 @@ The **Tweet Generator App** is a web application built with **Flask**, **Langcha
 
 ```cd tweet-generator-app```
 
-Set up a virtual environment (Optional but recommended):
-```python3 -m venv venv```
-```source venv/bin/activate   # On macOS/Linux```
-```venv\Scripts\activate      # On Windows```
-```Install dependencies:```
+Set up a virtual environment:
 
-```pip install -r requirements.txt```
+- ```python3 -m venv venv```
+
+- ```source venv/bin/activate   # On macOS/Linux```
+
+- ```venv\Scripts\activate      # On Windows```
+
+- ```Install dependencies:```
+
+- ```pip install -r requirements.txt```
 
 ### Set up environment variables:
 
@@ -62,22 +66,11 @@ Run the application:
 
 ```flask run```
 
-## How to Use
+## How to use
 - Go to the app’s main page.
 - Enter the URL of the article you want to summarize into the input field.
 - Click the Submit button.
-- The app will scrape the article, summarize it, and generate a tweet.
-
-## Contributing
-Contributions are welcome to this project! To contribute:
-
-- Fork the repository
-- Clone your fork
-- Create a new branch (git checkout -b feature-branch)
-- Make your changes
-- Commit your changes (git commit -am 'Add new feature')
-- Push to the branch (git push origin feature-branch)
-- Open a pull request on GitHub
+- The app will scrape the article, summarize it and generate a tweet.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
