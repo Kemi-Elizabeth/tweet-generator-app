@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uptweet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>        
+            <img src="/static/uptweet_logo_1.png" alt="Uptweet Logo" class="logo">
+            <p class="tagline">Generate tweets for your DevCenter blogs in no time</p>
+        </header>
+
+        <section class="form-section">
+            <!-- Form that sends URL to Flask backend -->
+            <form method="POST" action="/">
+                <input type="text" name="urlInput" placeholder="Enter blog URL here..." required />
+                <button type="submit">Generate Tweet</button>
+            </form>
+        </section>
+
+        {% if tweet %}
+        <section class="tweet-output">
+            <h2>Generated Tweet</h2>
+            <textarea id="tweetOutput" readonly>{{ tweet }}</textarea>
+        </section>
+        {% endif %}
+
+        <footer>
+            <p>Powered by <a href="https://upsun.com" target="_blank">Upsun</a></p>
+        </footer>
+    </div>
+</body>
+</html>

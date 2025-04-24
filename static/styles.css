@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #020018;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 1.4em;
+    color: #f7ff67;
+    margin-top: 10px;
+}
+
+.logo {
+    max-width: 100%;  /* Ensures the image doesn't exceed the width of its container */
+    height: auto;     /* Maintains the aspect ratio */
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.5em;
+    margin-right: 10px;
+    border: 2px solid #020018;
+    border-radius: 5px;
+}
+
+button {
+    padding: 20px 40px;
+    font-family: "Inter", sans-serif;
+    margin-top: 30px;
+    background-color: #e1ff00;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #020018;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e1ff00ad;
+    animation: jiggle 0.3s ease-in-out;
+}
+/* Add a shake animation */
+@keyframes jiggle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Make the button jiggle when clicked */
+button:active {
+    animation: jiggle 0.3s ease-in-out;
+}
+
+.tweet-output {
+    margin-top: 30px;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 5px;
+    color:#6046FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tweetOutput {
+    width: 100%;
+    height: 100px;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #e5ff55;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
