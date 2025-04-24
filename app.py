@@ -4,9 +4,13 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import openai
+import os
+from dotenv import load_dotenv
+load_dotenv()  # Load environment variables from the .env file
 
-# Your OpenAI API Key (Make sure it's set as an environment variable or passed directly)
-openai.api_key = "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"
+
+# Your OpenAI API Key (Load this from your .env file)
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
 
