@@ -2,7 +2,7 @@
 
 ## Description
 
-The **Tweet Generator App** is a web application built with **Flask**, **Langchain**, and **OpenAI** that allows users to generate tweet-worthy summaries from Upsun articles and blogs. By simply providing a URL to an article or blog post, the app scrapes its content, summarizes it and generates a tweet from the summary.
+The **Tweet Generator App** is a web application built with **Flask**, **Langchain** and **OpenAI** that allows users to generate tweet-worthy summaries from Upsun articles and blogs. By simply providing a URL to an article or blog post, the app scrapes its content, summarizes it and generates a tweet from the summary.
 
 ## Features
 
