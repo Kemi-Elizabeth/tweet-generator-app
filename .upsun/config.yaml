@@ -32,7 +32,7 @@ applications:
 
     # The web key configures the web server running in front of your app.
     # More information: https://docs.upsun.com/create-apps/app-reference/single-runtime-image.html#web
-    #web:
+    web:
       # Commands are run once after deployment to start the application process.
       # More information: https://docs.upsun.com/create-apps/app-reference/single-runtime-image.html#web-commands
       #commands:
