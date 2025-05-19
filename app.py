@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request
 from newspaper import Article
-from langchain.chat_models import ChatOpenAI
+#from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
+from langchain_community.chat_models import ChatOpenAI
 import openai
 import os
 from dotenv import load_dotenv
