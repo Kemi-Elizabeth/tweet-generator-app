@@ -58,7 +58,8 @@ def index():
         
     return render_template('index.html', tweet=tweet)
 
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', port=8888)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8888))
+    app.run(debug=False, host='0.0.0.0', port=port)
 
 
